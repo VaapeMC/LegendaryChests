@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
+group 'me.vaape'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url = 'https://papermc.io/repo/repository/maven-public/'
+    }
+}
+
+dependencies {
+    compileOnly('io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT')
+    // BuildTools need to compile craftbukkit for this to work correctly
+    compileOnly('org.bukkit:craftbukkit:1.18.1-R0.1-SNAPSHOT')
+    compileOnly('me.vaape:rewards:1.0.0')
+}
