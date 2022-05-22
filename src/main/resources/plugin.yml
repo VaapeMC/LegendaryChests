@@ -1,6 +1,9 @@
 name: LegendaryChests
 main: me.vaape.legendarychests.LegendaryChests
 version: 1.0
-api-version: 1.17
+api-version: 1.18
 depend: [Rewards]
 commands:
+  legendarychestsreload:
+    description: Reloads legendary chests config (rewards config)
+    permission: legendarychests.reload

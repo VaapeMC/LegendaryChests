@@ -18,8 +18,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly('io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT')
+    compileOnly('io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT')
     // BuildTools need to compile craftbukkit for this to work correctly
     compileOnly('org.bukkit:craftbukkit:1.18.1-R0.1-SNAPSHOT')
-    compileOnly('me.vaape:rewards:1.0.0')
+    implementation files('libs/Rewards-1.0.0.jar')
 }
